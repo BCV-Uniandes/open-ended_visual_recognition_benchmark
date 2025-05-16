@@ -196,12 +196,13 @@ And run `python datasets/prepare_ade20k_ins_seg.py`, to extract instance annotat
 To run the evaluation using LAC, execute the following command from the root directory of this repository:
 
 ```
-CUDA_VISIBLE_DEVICES=0 python -m ALA.eval_open_vocab_seg_full_metric_set \
+CUDA_VISIBLE_DEVICES=0 python -m LAC.eval_open_vocab_seg_full_metric_set \
     --dataset {dataset} \
     --model {model_name} \
     --model_outputs_path {descriptions_json_path} \
     --semantic_relationship_file_path {semantic_relationship_json_file_path} \
     --num-gpus 1 \
+    --sentence_descriptions \
 ```
 You can find an example to run the evaluation of OPAL on Cityscapes in [LAC/eval_lac.sh](https://github.com/BCV-Uniandes/open-ended_visual_recognition_benchmark/blob/main/LAC/eval_lac.sh). The output descriptions .json from all the models are available [here](https://github.com/BCV-Uniandes/open-ended_visual_recognition_benchmark/tree/main/outputs), and the semantic relationships for ADE20K and Cityscapes can be found [here](https://github.com/BCV-Uniandes/open-ended_visual_recognition_benchmark/tree/main/LAC/semantic_relationships).
 
