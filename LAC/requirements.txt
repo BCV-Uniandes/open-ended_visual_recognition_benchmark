@@ -1,2 +1,2 @@
 flair
-git+https://gitee.com/ascend/transformers.git
+transformers==4.41
