@@ -23,7 +23,7 @@ class DatasetEvaluatorDict(DatasetEvaluator):
         """
         super().__init__()
         self._evaluators = evaluators
-        self._model_name = "debug"#cfg.TEST.OUTPUT_FILES[0][0] 
+        self._model_name = cfg.TEST.OUTPUT_FILES[0][0] 
 
     def reset(self):
         for k in self._evaluators:
