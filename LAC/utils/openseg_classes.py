@@ -267,7 +267,7 @@ CITYSCAPES_CATEGORIES = [
 def get_ade20k_categories_with_prompt_eng():
     ADE20K_150_CATEGORIES_ = copy.deepcopy(ADE20K_150_CATEGORIES)
     ade20k_id_names = (
-        open("./ALA/utils/ade20k_150_with_prompt_eng.txt").read().splitlines()
+        open("./LAC/utils/ade20k_150_with_prompt_eng.txt").read().splitlines()
     )
     ade_idx = 0
     for line in ade20k_id_names:
@@ -285,7 +285,7 @@ def get_ade20k_categories_with_prompt_eng():
 def get_cityscapes_categories_with_prompt_eng():
     CITYSCAPES_CATEGORIES_ = copy.deepcopy(CITYSCAPES_CATEGORIES)
     cityscapes_id_names = (
-        open("./ALA/utils/cityscapes_with_prompt_eng.txt").read().splitlines()
+        open("./LAC/utils/cityscapes_with_prompt_eng.txt").read().splitlines()
     )
     cityscapes_idx = 0
     for line in cityscapes_id_names:
