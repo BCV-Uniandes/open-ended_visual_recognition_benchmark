@@ -202,7 +202,7 @@ Para correr la evaluación de LACE, debe correr la evaluación con el comando
     --semantic_relationship_file_path {semantic_relationship_json_file_path} \
     --num-gpus 1 \
 ```
-From the root directory of this repository, you can find an example to run the evaluation of OPAL on Cityscapes in [ALA/eval_ala.sh](https://github.com/BCV-Uniandes/open-ended_visual_recognition_benchmark/blob/main/ALA/eval_ala.sh). The output descriptions from the models are available [here](https://github.com/BCV-Uniandes/open-ended_visual_recognition_benchmark/tree/main/outputs), and the semantic relationships for ADE20K and Cityscapes can be found [here](https://github.com/BCV-Uniandes/open-ended_visual_recognition_benchmark/tree/main/ALA/semantic_relationships).
+From the root directory of this repository, you can find an example to run the evaluation of OPAL on Cityscapes in [ALA/eval_ala.sh](https://github.com/BCV-Uniandes/open-ended_visual_recognition_benchmark/blob/main/ALA/eval_ala.sh). The output descriptions .json from all the models are available [here](https://github.com/BCV-Uniandes/open-ended_visual_recognition_benchmark/tree/main/outputs), and the semantic relationships for ADE20K and Cityscapes can be found [here](https://github.com/BCV-Uniandes/open-ended_visual_recognition_benchmark/tree/main/ALA/semantic_relationships).
 
 If you want to see the results of our user study, the json file can be found in [this path](https://github.com/BCV-Uniandes/open-ended_visual_recognition_benchmark/tree/main/user_study_results).
 
