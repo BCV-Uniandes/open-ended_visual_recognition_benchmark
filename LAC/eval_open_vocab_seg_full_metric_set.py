@@ -196,6 +196,8 @@ class Trainer(DefaultTrainer):
             else:
                 try:
                     evaluator = cls.build_evaluator(cfg, dataset_name)
+                    evaluator.reset()
+                
                 except NotImplementedError:
                     logger.warn(
                         "No evaluator found. Use `DefaultTrainer.test(evaluators=)`, "
