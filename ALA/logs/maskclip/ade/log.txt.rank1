@@ -1,0 +1,10 @@
+[05/15 23:18:19] detectron2.data.dataset_mapper INFO: [DatasetMapper] Augmentations used in inference: [ResizeShortestEdge(short_edge_length=(800, 800), max_size=1333, sample_style='choice')]
+[05/15 23:18:19] detectron2.data.common INFO: Serializing the dataset using: <class 'detectron2.data.common._TorchSerializedList'>
+[05/15 23:18:19] detectron2.data.common INFO: Serializing 2000 elements to byte tensors and concatenating them all ...
+[05/15 23:18:19] detectron2.data.common INFO: Serialized dataset takes 2.06 MiB
+[05/15 23:18:21] detectron2.evaluation.evaluator INFO: Start inference on 500 batches
+[05/15 23:43:03] detectron2.data.dataset_mapper INFO: [DatasetMapper] Augmentations used in inference: [ResizeShortestEdge(short_edge_length=(800, 800), max_size=1333, sample_style='choice')]
+[05/15 23:43:03] detectron2.data.common INFO: Serializing the dataset using: <class 'detectron2.data.common._TorchSerializedList'>
+[05/15 23:43:03] detectron2.data.common INFO: Serializing 2000 elements to byte tensors and concatenating them all ...
+[05/15 23:43:03] detectron2.data.common INFO: Serialized dataset takes 2.06 MiB
+[05/15 23:43:05] detectron2.evaluation.evaluator INFO: Start inference on 500 batches
