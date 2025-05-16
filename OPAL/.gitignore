@@ -1,0 +1,7 @@
+*__pycache__
+.DS_Store
+
+output/
+output_osprey_stage3/
+exp/
+wandb/

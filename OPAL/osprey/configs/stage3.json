@@ -1,0 +1,13 @@
+[
+    {
+        "type": "coco_data",
+        "ann_file": "/home/bcv_researcher/data/coco/annotations/instances_train2017.json",
+        "img_prefix": "/home/bcv_researcher/data/coco/imgs"
+    },
+
+    {
+        "type": "RefCOCO",
+        "ann_file": "/home/bcv_researcher/data/refcocos/finetune_refcoco_train_with_mask.json",
+        "img_prefix": "/home/bcv_researcher/data/coco/imgs"
+     }
+]
