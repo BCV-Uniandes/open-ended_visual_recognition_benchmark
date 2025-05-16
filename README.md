@@ -203,7 +203,7 @@ CUDA_VISIBLE_DEVICES=0 python -m ALA.eval_open_vocab_seg_full_metric_set \
     --semantic_relationship_file_path {semantic_relationship_json_file_path} \
     --num-gpus 1 \
 ```
-You can find an example to run the evaluation of OPAL on Cityscapes in [LAC/eval_ala.sh](https://github.com/BCV-Uniandes/open-ended_visual_recognition_benchmark/blob/main/LAC/eval_ala.sh). The output descriptions .json from all the models are available [here](https://github.com/BCV-Uniandes/open-ended_visual_recognition_benchmark/tree/main/outputs), and the semantic relationships for ADE20K and Cityscapes can be found [here](https://github.com/BCV-Uniandes/open-ended_visual_recognition_benchmark/tree/main/LAC/semantic_relationships).
+You can find an example to run the evaluation of OPAL on Cityscapes in [LAC/eval_lac.sh](https://github.com/BCV-Uniandes/open-ended_visual_recognition_benchmark/blob/main/LAC/eval_lac.sh). The output descriptions .json from all the models are available [here](https://github.com/BCV-Uniandes/open-ended_visual_recognition_benchmark/tree/main/outputs), and the semantic relationships for ADE20K and Cityscapes can be found [here](https://github.com/BCV-Uniandes/open-ended_visual_recognition_benchmark/tree/main/LAC/semantic_relationships).
 
 If you want to see the results of our user study, the json file can be found in [this path](https://github.com/BCV-Uniandes/open-ended_visual_recognition_benchmark/tree/main/user_study_results).
 
