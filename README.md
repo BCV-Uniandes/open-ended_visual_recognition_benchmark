@@ -193,12 +193,18 @@ And run `python datasets/prepare_ade20k_ins_seg.py`, to extract instance annotat
 
 ### Test setup:
 
-Modify the routes in test_net.sh according to your local paths.
+Para correr la evaluación de LACE, debe correr la evaluación con el comando 
 
-```bash
-cd ./baseline
-python  -W ignore -m main --init_method "tcp://localhost:8080" NUM_GPUS 1 DATA.PATH_TO_DATA_DIR path_to_your_data_dir DATA.PATH_TO_FEATURES_DIR path_to_your_features_dir TRAIN.CHECKPOINT_FILE_PATH path_to_pretrained_model OUTPUT_DIR output_dir TRAIN.ENABLE "False"
+```CUDA_VISIBLE_DEVICES=0 python -m ALA.eval_open_vocab_seg_full_metric_set \
+    --dataset {dataset} \
+    --model {model_name} \
+    --model_outputs_path {descriptions_json_path} \
+    --semantic_relationship_file_path {semantic_relationship_json_file_path} \
+    --num-gpus 1 \
 ```
+From the root directory of this repository, you can find an example to run the evaluation of OPAL on Cityscapes in  (ALA/eval_ala.sh)[ALA/eval_ala.sh](https://github.com/BCV-Uniandes/open-ended_visual_recognition_benchmark/blob/main/ALA/eval_ala.sh). The output descriptions from the models are available (here)[https://github.com/BCV-Uniandes/open-ended_visual_recognition_benchmark/tree/main/outputs], and the semantic relationships for ADE20K and Cityscapes can be found (here)[https://github.com/BCV-Uniandes/open-ended_visual_recognition_benchmark/tree/main/ALA/semantic_relationships].
+
+If you want to see the results of our user study, the json file can be found in (this path)[https://github.com/BCV-Uniandes/open-ended_visual_recognition_benchmark/tree/main/user_study_results]
 
 ## Pretrained model
 
