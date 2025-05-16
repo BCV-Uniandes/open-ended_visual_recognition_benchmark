@@ -954,7 +954,7 @@ class EvalOsprey(nn.Module):
 def main(args):
     cfg = get_cfg()
 
-    cfg.OUTPUT_DIR = "./ALA/{}/{}/{}/".format(
+    cfg.OUTPUT_DIR = "./LAC/{}/{}/{}/".format(
         args.output_dir, args.model, args.dataset
     )
 
@@ -1014,7 +1014,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--semantic_relationship_file_path",
         help="path to semantic relationships file",
-        default="./ALA//semantic_relationships/output_semantics_gpt4_ade20k.json",
+        default="./LAC/semantic_relationships/output_semantics_gpt4_ade20k.json",
     )
 
     parser.add_argument(
