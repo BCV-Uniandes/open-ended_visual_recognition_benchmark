@@ -1,3 +1,5 @@
+#Run pip install -r requirements.txt if you are having issues with this script
+
 CUDA_VISIBLE_DEVICES=0 python -m LAC.eval_open_vocab_seg_full_metric_set \
     --dataset ade \
     --model opal \
